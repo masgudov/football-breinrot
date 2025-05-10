@@ -1,0 +1,107 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ФК Бреинроты</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: url('https://images.unsplash.com/photo-1552674603-0e1fd9b2398e?auto=format&fit=crop&w=1600&q=80 ') no-repeat center center/cover;
+    
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#about">О клубе</a>
+      <a href="#news">Новости</a>
+      <a href="#team">Команда</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="header-content">
+      <h1>ФК «Бреинроты»</h1>
+      <p>Умные как тактические ходы. Сильные как чемпионы.</p>
+    </div>
+  </header>
+  !DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФК Бреинроты</title>
+  <style>
+    body {
+      
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#about">О клубе</a>
+    <a href="#news">Новости</a>
+    <a href="#team">Состав</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- Шапка сайта -->
+  <header>
+    <h1>ФК «Бреинроты»</h1>
+    <p>Где ум встречается с силой на поле!</p>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <!-- О клубе -->
+    <section id="about">
+      <h2>О футбольном клубе</h2>
+      <p>ФК «Бреинроты» — молодая и амбициозная команда, объединяющая спортсменов, которые не только умеют играть, но и думать как тактики. Мы верим, что футбол — это не только физика, но и стратегия.</p>
+    </section>
+
+    <!-- Новости -->
+    <section id="news">
+      <h2>Последние новости</h2>
+      <p><strong>15.04.2025:</strong> «Бреинроты» одержали победу в региональном турнире среди юношеских команд!</p>
+      <p><strong>01.04.2025:</strong> Открыт набор в академию ФК «Бреинроты» для игроков от 12 до 18 лет.</p>
+    </section>
+
+    <!-- Состав -->
+    <section id="team">
+      <h2>Основной состав</h2>
+      <ul>
+        <li>Алексей Стрельцов — капитан команды</li>
+        <li>Данил Рыжков — нападающий</li>
+        <li>Максим Ларин — защитник</li>
+        <li>Иван Тихомиров — полузащитник</li>
+        <li>Артем Лутсев - полузащитник</li>
+        <li>Никита Плотников - полузащитник</li>
+        <li>Иван Сутугин - полузащитник</li>
+        <li>Дамир Таликин-полузащитник</li>
+        <li>Евгений Болотов - полузащитники</li>
+        <li>Роман Ковалёв — вратарь</li>
+        <li>Вадим Аверкиев - запосной вратарь</li>
+        <li>Иван Литвенок - второй запосной вратарь</li>
+      </ul>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+      <h2>Контакты</h2>
+      <p>Email: info@breinroty.ru</p>
+      <p>Телефон: +7 (999) 123-45-67</p>
+      <p>Стадион: г. Москва, стадион «Надежда»</p>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2025 ФК «Бреинроты». Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
