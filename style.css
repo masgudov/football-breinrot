@@ -1,107 +1,91 @@
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>ФК Бреинроты</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-    .header {
-      background: url('https://images.unsplash.com/photo-1552674603-0e1fd9b2398e?auto=format&fit=crop&w=1600&q=80 ') no-repeat center center/cover;
-    
-  </style>
-</head>
-<body>
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  <header class="header">
-    <nav class="nav">
-      <a href="#about">О клубе</a>
-      <a href="#news">Новости</a>
-      <a href="#team">Команда</a>
-      <a href="#contact">Контакты</a>
-    </nav>
+/* Шапка */
+.header {
+  background: linear-gradient(90deg, #ff5722, #d32f2f); /* Оранжево-красная палитра как у мяча */
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-    <div class="header-content">
-      <h1>ФК «Бреинроты»</h1>
-      <p>Умные как тактические ходы. Сильные как чемпионы.</p>
-    </div>
-  </header>
-  !DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ФК Бреинроты</title>
-  <style>
-    body {
-      
-  </style>
-</head>
-<body>
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  <!-- Навигация -->
-  <nav>
-    <a href="#about">О клубе</a>
-    <a href="#news">Новости</a>
-    <a href="#team">Состав</a>
-    <a href="#contact">Контакты</a>
-  </nav>
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  <!-- Шапка сайта -->
-  <header>
-    <h1>ФК «Бреинроты»</h1>
-    <p>Где ум встречается с силой на поле!</p>
-  </header>
+.logo img {
+  height: 35px;
+  animation: bounce 2s infinite;
+}
 
-  <!-- Основной контент -->
-  <main>
-    <!-- О клубе -->
-    <section id="about">
-      <h2>О футбольном клубе</h2>
-      <p>ФК «Бреинроты» — молодая и амбициозная команда, объединяющая спортсменов, которые не только умеют играть, но и думать как тактики. Мы верим, что футбол — это не только физика, но и стратегия.</p>
-    </section>
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
 
-    <!-- Новости -->
-    <section id="news">
-      <h2>Последние новости</h2>
-      <p><strong>15.04.2025:</strong> «Бреинроты» одержали победу в региональном турнире среди юношеских команд!</p>
-      <p><strong>01.04.2025:</strong> Открыт набор в академию ФК «Бреинроты» для игроков от 12 до 18 лет.</p>
-    </section>
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
 
-    <!-- Состав -->
-    <section id="team">
-      <h2>Основной состав</h2>
-      <ul>
-        <li>Алексей Стрельцов — капитан команды</li>
-        <li>Данил Рыжков — нападающий</li>
-        <li>Максим Ларин — защитник</li>
-        <li>Иван Тихомиров — полузащитник</li>
-        <li>Артем Лутсев - полузащитник</li>
-        <li>Никита Плотников - полузащитник</li>
-        <li>Иван Сутугин - полузащитник</li>
-        <li>Дамир Таликин-полузащитник</li>
-        <li>Евгений Болотов - полузащитники</li>
-        <li>Роман Ковалёв — вратарь</li>
-        <li>Вадим Аверкиев - запосной вратарь</li>
-        <li>Иван Литвенок - второй запосной вратарь</li>
-      </ul>
-    </section>
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-    <!-- Контакты -->
-    <section id="contact">
-      <h2>Контакты</h2>
-      <p>Email: info@breinroty.ru</p>
-      <p>Телефон: +7 (999) 123-45-67</p>
-      <p>Стадион: г. Москва, стадион «Надежда»</p>
-    </section>
-  </main>
+.nav a:hover {
+  color: #fffbe6;
+}
 
-  <!-- Подвал -->
-  <footer>
-    <p>&copy; 2025 ФК «Бреинроты». Все права защищены.</p>
-  </footer>
+/* Мобильное меню */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
 
-</body>
-</html>
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav li {
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+}
