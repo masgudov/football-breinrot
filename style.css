@@ -93,3 +93,7 @@ body {
 .meme-card img:hover {
   transform: scale(1.05);
 }
+
+a {
+  font-size:2
+}
