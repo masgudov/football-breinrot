@@ -5,34 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Брейнроты - FootBrainrot</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .brainrot-card {
-      background-color: white;
-      border-left: 5px solid #ff5722;
-      padding: 15px 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .brainrot-card:hover {
-      transform: scale(1.03);
-    }
-
-    .brainrot-text {
-      font-size: 18px;
-      color: #333;
-      font-style: italic;
-    }
-
-    .brainrot-author {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #888;
-      text-align: right;
-    }
-  </style>
+  <link rel="stylesheet" href="brainrots.css">
 </head>
 <body>
 
@@ -63,8 +36,10 @@
     <section class="brainrots-section">
       <div class="container">
         <h2>🧠 Все футбольные брейнроты</h2>
+
         <div class="brainrot-list">
 
+          <!-- Основные цитаты -->
           <div class="brainrot-card">
             <div class="brainrot-text">"Он был один на один... но не забил."</div>
             <div class="brainrot-author">— Классика жанра</div>
@@ -95,6 +70,10 @@
             <div class="brainrot-author">— Защитник вышел из штаны</div>
           </div>
 
+        </div>
+
+        <!-- Дополнительные цитаты (скрыты) -->
+        <div class="hidden-cards" id="extraCards">
           <div class="brainrot-card">
             <div class="brainrot-text">"Игрок упал — арбитр видел!"</div>
             <div class="brainrot-author">— Но не дал пенальти</div>
@@ -119,28 +98,13 @@
             <div class="brainrot-text">"Судья просто хочет домой."</div>
             <div class="brainrot-author">— Поэтому даёт добавленное время по чуть-чуть</div>
           </div>
-
-          <div class="brainrot-card">
-            <div class="brainrot-text">"Пас был идеальный, только игрок не там оказался."</div>
-            <div class="brainrot-author">— Ошибочка вышла</div>
-          </div>
-
-          <div class="brainrot-card">
-            <div class="brainrot-text">"Это не мимо — это чуть-чуть неточно!"</div>
-            <div class="brainrot-author">— Когда мяч ушёл на трибуны</div>
-          </div>
-
-          <div class="brainrot-card">
-            <div class="brainrot-text">"Он же капитан! Он должен был знать!"</div>
-            <div class="brainrot-author">— После очередной ошибки</div>
-          </div>
-
-          <div class="brainrot-card">
-            <div class="brainrot-text">"Разминка прошла отлично!"</div>
-            <div class="brainrot-author">— Когда команда проигрывает 0:3</div>
-          </div>
-
         </div>
+
+        <!-- Кнопка "Показать ещё" -->
+        <button class="show-more-btn" onclick="document.getElementById('extraCards').style.display = 'flex'">
+          Показать ещё
+        </button>
+
       </div>
     </section>
   </main>
