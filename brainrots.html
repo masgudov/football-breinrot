@@ -3,114 +3,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Брейнроты - FootBrainrot</title>
-  <style>
-    /* Базовые стили */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Шапка */
-    .header {
-      background-color: #003366;
-      color: white;
-      padding: 15px 0;
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    /* Основной контент */
-    .main {
-      padding: 40px 0;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    /* Список карточек */
-    .brainrot-list,
-    .hidden-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .brainrot-card {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: calc(33% - 1rem);
-      box-sizing: border-box;
-    }
-
-    .brainrot-text {
-      font-style: italic;
-    }
-
-    .brainrot-author {
-      margin-top: 0.5rem;
-      color: #777;
-    }
-
-    /* Детали — "Показать ещё" */
-    .show-more-section summary {
-      cursor: pointer;
-      padding: 10px;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .show-more-section .hidden-cards {
-      margin-top: 1rem;
-    }
-
-    /* Подвал */
-    .footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="brainrots.css">
 </head>
 <body>
 
@@ -176,11 +70,10 @@
 
         </div>
 
-        <!-- Дополнительные цитаты в details -->
+        <!-- Дополнительные цитаты -->
         <div class="show-more-section">
           <details>
             <summary>Показать ещё</summary>
-
             <div class="hidden-cards">
               <div class="brainrot-card">
                 <div class="brainrot-text">"Игрок упал — арбитр видел!"</div>
