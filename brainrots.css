@@ -1,0 +1,39 @@
+/* Список карточек */
+.brainrot-list,
+.hidden-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brainrot-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: calc(33% - 1rem);
+  box-sizing: border-box;
+}
+
+.brainrot-text {
+  font-style: italic;
+}
+
+.brainrot-author {
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+/* Детали — "Показать ещё" */
+.show-more-section summary {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.show-more-section .hidden-cards {
+  margin-top: 1rem;
+}
