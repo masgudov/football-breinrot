@@ -1,3 +1,107 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Основной контент */
+.main {
+  padding: 40px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Карточки */
+.card-grid,
+.brainrot-list,
+.memes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card,
+.quote-card,
+.brainrot-card,
+.meme-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 1rem);
+  box-sizing: border-box;
+  font-size: 16px; /* единый размер текста */
+}
+
+.quote-text,
+.brainrot-text {
+  font-style: italic;
+}
+
+.quote-author,
+.brainrot-author {
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+/* Подвал */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
 <style>
   /* Стили для контейнера с кнопками */
   .features {
