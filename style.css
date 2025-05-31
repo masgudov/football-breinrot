@@ -1,3 +1,28 @@
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px; /* Увеличенные отступы */
+  border-radius: 30px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-size: 17px; /* Увеличенный шрифт */
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: scale(1.05);
+}
+
 /* Общие стили */
 * {
   margin: 0;
