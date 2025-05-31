@@ -1,4 +1,3 @@
-/* Список карточек */
 .brainrot-list,
 .hidden-cards {
   display: flex;
@@ -8,6 +7,7 @@
 
 .brainrot-card {
   background-color: #fff;
+  border: 1px solid #ddd; /* Рамка */
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -24,7 +24,7 @@
   color: #777;
 }
 
-/* Детали — "Показать ещё" */
+/* Кнопка "Показать ещё" */
 .show-more-section summary {
   cursor: pointer;
   padding: 10px;
@@ -32,8 +32,4 @@
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
-}
-
-.show-more-section .hidden-cards {
-  margin-top: 1rem;
 }
