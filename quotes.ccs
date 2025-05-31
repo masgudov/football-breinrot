@@ -8,15 +8,11 @@
 
 .brainrot-card {
   background-color: #fff;
-  border: 1px solid #ddd; /* рамка */
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: calc(33% - 1rem);
   box-sizing: border-box;
-
-  /* Добавляем размер шрифта */
-  font-size: 16px;
 }
 
 .brainrot-text {
@@ -26,10 +22,9 @@
 .brainrot-author {
   margin-top: 0.5rem;
   color: #777;
-  font-size: 14px;
 }
 
-/* Кнопка "Показать ещё" */
+/* Детали — "Показать ещё" */
 .show-more-section summary {
   cursor: pointer;
   padding: 10px;
@@ -37,5 +32,8 @@
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
-  font-size: 16px;
+}
+
+.show-more-section .hidden-cards {
+  margin-top: 1rem;
 }
