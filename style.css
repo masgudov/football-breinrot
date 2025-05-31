@@ -1,3 +1,40 @@
+<style>
+  /* Стили для кнопок */
+  .menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-links li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Основной цвет кнопки */
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-links li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-links li a:active {
+    transform: scale(0.98);
+  }
+</style>
+
 {
   margin: 0;
   padding: 0;
